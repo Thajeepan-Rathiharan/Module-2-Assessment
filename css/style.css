@@ -1,3 +1,14 @@
+/* CSS for text boxes */
+.container2{
+    background-color: grey;
+    justify-content: space-between;
+    padding: 40px;
+    width: 60%;
+    text-align: center;
+    margin: 10rem auto 0 auto;
+    border-radius: 10px;
+    }
+
 /* CSS elements for the footer */
 .site-footer
 {

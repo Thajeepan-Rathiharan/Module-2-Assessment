@@ -29,14 +29,15 @@ body {
 
   .item{
     background-color: #FFFF00;
-  font-family: Lato;
-  border-style: solid;
-  border-width: 2px;
-  border-color: black;
-  padding: 10px;
-  margin: 10px;
-  border-radius: 10px;
+    font-family: Lato;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
   }
+  /* CSS for navigation menu tab*/
 
 /* CSS for text boxes */
 .container2{

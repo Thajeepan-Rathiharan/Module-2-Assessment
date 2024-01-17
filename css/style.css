@@ -23,9 +23,20 @@ body {
     justify-content: space-around;
     margin: 20px;
   }
-  /* Container to create boxes around the menu options on the tabs to go to different pages.
+  /* Container that has the menu options on the tabs to go to different pages.
      A small outline is created with a spacing between each option worth 20px space.
      Display: flex aligns the options in a row. */
+
+  .item{
+    background-color: #FFFF00;
+  font-family: Lato;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  }
 
 /* CSS for text boxes */
 .container2{

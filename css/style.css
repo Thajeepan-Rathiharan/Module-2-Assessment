@@ -322,8 +322,11 @@ img {
   border-color: black;
   padding: 10px;
   margin: 10px;
+  /* Width and height reduces the size of the shape making it perfectly create a rectangle shape around the text. */
+  width: 100px;
+	height: 40px;
   border-radius: 10px;
-  cursor: pointer;
+  cursor: pointer;  
 }
 
 /* CSS elements for the footer */

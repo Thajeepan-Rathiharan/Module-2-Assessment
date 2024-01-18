@@ -399,8 +399,14 @@ img {
   border-radius:100%;
   background-color:#33353d
 }
+
+.text-justify{
+    text-align: center;
+}
+
 .copyright-text
 {
+  text-align: center;
   margin:0
 }
 @media (max-width:991px)

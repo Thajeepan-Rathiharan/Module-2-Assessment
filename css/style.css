@@ -21,7 +21,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin: 20px;
+    margin: 10px;
   }
   /* Container that has the menu options on the tabs to go to different pages.
      A small outline is created with a spacing between each option worth 20px space.

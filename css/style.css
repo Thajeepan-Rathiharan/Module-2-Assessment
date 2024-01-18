@@ -321,7 +321,8 @@ img {
   border-width: 2px;
   border-color: black;
   padding: 10px;
-  margin: 10px;
+  /* Margin set to auto so the button centers horiznotally on the page. */
+  margin: auto;
   /* Width and height reduces the size of the shape making it perfectly create a rectangle shape around the text. */
   width: 100px;
 	height: 40px;

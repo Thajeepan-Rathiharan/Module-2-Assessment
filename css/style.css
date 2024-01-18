@@ -118,21 +118,6 @@ body {
 	border: 1px solid #ccc; 
 } 
 
-.restart-button{ 
-	padding: 10px 20px; 
-	background-color: #0E9D57; 
-	border: none; 
-	border-radius: 25px; 
-	color: #fff; 
-	cursor: pointer; 
-} 
-
-.restart-button:hover{ 
-	background-color: transparent; 
-	border: 1px solid #0E9D57; 
-	color: #0E9D57; 
-} 
-
 /* Dynamic classes that are being added by JavaScript */
 .toggled .card-image { 
 	transform: rotateY(0deg); 

@@ -3,7 +3,6 @@ body {
     flex-direction: column;
     min-height: 100vh;
     margin: 0;
-    background-image: url("../img/background.jpg");
     height: fit-content;
     background-repeat: no-repeat;
     background-size: cover;
@@ -314,7 +313,7 @@ body {
 
 body {
  height: fit-content;
- background-image: url("../img/bg3.jpg");
+ background-image: url("../img/background.jpg");
  background-repeat: repeat;
  background-size: cover;
 }

@@ -333,6 +333,15 @@ img {
   opacity: 0;
 }
 
+#retry-button{
+  font-family: Lato;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+}
 
 /* CSS elements for the footer */
 .site-footer

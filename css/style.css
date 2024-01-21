@@ -1,2 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@400;500&family=Merriweather:wght@300;400&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+html {
+    background-image: linear-gradient(rgba(255, 0, 0, 0.25),
+            rgba(255, 0, 0, 0.25)), url('../img/bg3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+body {
+    font-family: 'Merriweather', sans-serif;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+}

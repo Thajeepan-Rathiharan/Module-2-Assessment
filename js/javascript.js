@@ -76,3 +76,8 @@ const quizQuestions = [
     }
 ];
 
+let currentQuestionIndex = 0;
+let score = 0;
+let timerMinutes = 0;
+let timerSeconds = 0;
+let timerInterval;

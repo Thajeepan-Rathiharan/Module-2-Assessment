@@ -79,3 +79,10 @@ h2 em:hover {
     text-shadow: 3px 3px red;
     color: bisque;
 }
+
+p {
+    color: white;
+    font-size: 18px;
+    margin: 10px 0;
+    text-align: center;
+}

@@ -63,3 +63,19 @@ body {
     border: 2px solid wheat;
     box-shadow: 0 0 10px 2px wheat;
 }
+
+h2 {
+    padding-top: 10px;
+    text-align: center;
+    color: white;
+    font-family: 'Merriweather', sans-serif;
+}
+
+h2 em {
+    font-weight: bold;
+}
+
+h2 em:hover {
+    text-shadow: 3px 3px red;
+    color: bisque;
+}

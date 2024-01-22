@@ -101,4 +101,26 @@ function openPopup() {
     document.getElementById('popupContainer').style.display = 'none';
   }
 
-  
+  function displayQuestion() {
+    const currentQuestion = quizQuestions[currentQuestionIndex];
+    const questionText = document.getElementById("question-text");
+    const answerButtons = document.getElementById("answer-buttons");
+
+    questionText.innerHTML = "";
+    answerButtons.innerHTML = "";
+
+    incrementQuestionNumber();
+
+    questionText.innerHTML = currentQuestion.question;
+
+    currentQuestion.options.forEach(option => {
+        const button = document.createElement("button");
+        button.innerText = option;
+        button.classList.add("answer-button");
+        answerButtons.appendChild(button);
+
+        button.addEventListener("click", function () {
+            checkAnswer(option);
+        });
+    });
+}  

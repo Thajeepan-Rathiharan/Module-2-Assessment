@@ -52,3 +52,14 @@ body {
     height: 40px;
     padding-right: 5px;
 }
+
+.quiz-container {
+    margin: auto;
+    max-width: 700px;
+    width: 80%;
+    background-color: rgba(51, 36, 21, 0.7);
+    padding: 25px;
+    border-radius: 10px;
+    border: 2px solid wheat;
+    box-shadow: 0 0 10px 2px wheat;
+}

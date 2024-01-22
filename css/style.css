@@ -249,3 +249,68 @@ p .copyright {
     color: white;
     cursor: pointer;
   }
+
+/* Media Query for viewing the quiz website on tablet screens. */  
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    body {
+        font-size: 16px;
+    }
+
+    .quiz-container {
+        max-width: 90%;
+        margin: auto;
+    }
+
+    button:hover {
+        cursor: pointer;
+        box-shadow: 2px 2px white;
+        transform: scale(1);
+    }
+
+    #answer-buttons {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+    }
+     /* Style for the pop-up container */
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #150335;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+
+  /* Style for the pop-up content */
+.popup-content {
+    text-align: center;
+    padding: 20px;
+  }
+
+/* Style for the text inside the pop-up */
+  .popup-content p {
+    font-size: 10px;
+    color: white;
+}  
+
+  /* Style for the image inside the pop-up */
+.popup-content img {
+    max-width: 60%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  /* Style for the close button */
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 30px;
+    cursor: pointer;
+  }
+}  

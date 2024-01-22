@@ -86,3 +86,7 @@ p {
     margin: 10px 0;
     text-align: center;
 }
+
+#question-container {
+    margin-bottom: 20px;
+}

@@ -204,3 +204,18 @@ function endQuiz() {
     document.getElementById("retry-button").style.display = "block";
 }
 
+function retryQuiz() {
+    window.location.reload();
+}
+
+addEventListener("DOMContentLoaded", (event) => {
+ 
+    document.getElementById("timer-container").style.display = "none";
+    document.getElementById("question-number").style.display = "none";
+    document.getElementById("retry-button").style.display = "none";
+
+
+    document.getElementById("start-button").addEventListener("click", startQuiz);
+
+    document.getElementById("retry-button").addEventListener("click", retryQuiz);
+});

@@ -132,3 +132,37 @@ function incrementQuestionNumber() {
     const totalQuestions = document.getElementById("total-questions");
     totalQuestions.textContent = quizQuestions.length; 
 }
+
+function checkAnswer(selectedOption) {
+    const currentQuestion = quizQuestions[currentQuestionIndex];
+    const answerButtons = document.getElementById("answer-buttons");
+    const buttons = answerButtons.querySelectorAll("button");
+
+    buttons.forEach(button => {
+        button.disabled = true;
+ 
+        if (button.innerText === currentQuestion.correctAnswer) {
+            button.style.backgroundColor = "green";
+
+        } else if (button.innerText === selectedOption) {
+            button.style.backgroundColor = "red";
+        }
+    });
+
+    if (selectedOption === currentQuestion.correctAnswer) {
+        score++;
+    }
+
+    currentQuestionIndex++;
+
+    if (currentQuestionIndex < quizQuestions.length) {
+        setTimeout(() => {
+            displayQuestion();
+        }, 1500);
+
+    } else {
+        setTimeout(() => {
+            endQuiz();
+        }, 1500);
+    }
+}

@@ -315,7 +315,7 @@ p .copyright {
   }
 }  
 
-/* Media query for viewing the quiz website on mobile phones with a smaller screen than a tablet. */
+/* Media Query for viewing the quiz website on mobile phones with a smaller screen than a tablet. */
 @media screen and (max-width: 480px) {
     .heading {
         font-size: 36px;
@@ -380,3 +380,66 @@ p .copyright {
   }
 }
 
+/* Media Query for viewing the quiz website on mobile phones with a small screen. */
+@media screen and (max-width: 380px) {
+    .heading {
+        font-size: 34px;
+    }
+
+    .logo {
+        height: 29px;
+        padding-right: 5px;
+    }
+
+    .quiz-container {
+        margin: auto;
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    #answer-buttons {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 13px;
+    }
+         /* Style for the pop-up container */
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #150335;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+
+  /* Style for the pop-up content */
+.popup-content {
+    text-align: center;
+    padding: 20px;
+  }
+
+/* Style for the text inside the pop-up */
+  .popup-content p {
+    font-size: 11.5px;
+    color: white;
+}  
+
+  /* Style for the image inside the pop-up */
+.popup-content img {
+    max-width: 60%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  /* Style for the close button */
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+}

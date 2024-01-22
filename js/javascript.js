@@ -183,3 +183,24 @@ function startTimer() {
         document.getElementById("timer").textContent = `${formattedMinutes}:${formattedSeconds}`;
     }, 1000);
 }
+
+function endQuiz() {
+
+    clearInterval(timerInterval);
+    document.getElementById("timer-container").style.display = "none";
+
+
+    const scorePercentage = Math.round((score / quizQuestions.length) * 100);
+
+
+    const questionContainer = document.getElementById("question-container");
+    questionContainer.innerHTML = `
+    <h2>Quiz Completed</h2>
+    <p>Congratulations! You answered ${score} out of ${quizQuestions.length} questions correctly
+     in ${timerMinutes} mins : ${timerSeconds} secs</p>
+    <p>Your score percentage is ${scorePercentage}%</p>
+    `;
+
+    document.getElementById("retry-button").style.display = "block";
+}
+

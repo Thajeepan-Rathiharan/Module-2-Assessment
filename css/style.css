@@ -164,3 +164,51 @@ button:hover {
 .wrong-answer {
     color: red;
 }
+
+footer {
+    background-color: #150335;
+    margin-top: auto;
+    padding-bottom: 14px;
+    font-family: 'Alegreya SC', sans-serif;
+    border-top: 2px solid wheat;
+    color: bisque;
+    height: auto;
+    width: 100vw;
+}
+
+.social-networks {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 300px;
+}
+
+.social-networks>li {
+    display: inline;
+    margin-top: 20px;
+    width: 20%;
+    list-style: none;
+}
+
+.social-networks i {
+    color: bisque;
+    font-size: 30px;
+}
+
+.copyright-wrapper {
+    font-family: 'Merriweather', sans-serif;
+    text-align: center;
+    display: inline;
+}
+
+.copyright-wrapper p {
+    color: bisque;
+    font-size: 17px;
+}
+
+p .copyright {
+    margin-right: 5px;
+    vertical-align: middle;
+}

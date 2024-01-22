@@ -140,3 +140,19 @@ button:hover {
     flex-direction: column;
     align-items: center;
 }
+
+#timer-container {
+    display: flex;
+    align-items: center;
+}
+
+#timer {
+    background-color: #150335;
+    border: solid 2px wheat;
+    margin: 10px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    font-family: 'Merriweather', sans-serif;
+}

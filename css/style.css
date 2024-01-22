@@ -115,3 +115,21 @@ p {
     grid-gap: 30px;
     font-family: 'Merriweather', sans-serif;
 }
+
+button {
+    height: 40px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #5adbb5;
+    font-weight: bold;
+    color: #150335;
+    border: 2px solid white;
+    border-radius: 5px;
+    box-shadow: 0 0 3px white;
+}
+
+button:hover {
+    cursor: pointer;
+    box-shadow: 2px 2px white;
+    transform: scale(1.1);
+}

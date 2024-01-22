@@ -124,3 +124,11 @@ function openPopup() {
         });
     });
 }  
+
+function incrementQuestionNumber() {
+    const currentQuestionNumber = document.getElementById("current-question");
+    currentQuestionNumber.textContent = currentQuestionIndex + 1;
+
+    const totalQuestions = document.getElementById("total-questions");
+    totalQuestions.textContent = quizQuestions.length; 
+}

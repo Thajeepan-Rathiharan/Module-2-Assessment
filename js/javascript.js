@@ -166,3 +166,20 @@ function checkAnswer(selectedOption) {
         }, 1500);
     }
 }
+
+function startTimer() {
+    timerInterval = setInterval(function () {
+        if (timerSeconds === 59) {
+
+            timerMinutes++;
+            timerSeconds = 0;
+        } else {
+
+            timerSeconds++;
+        }
+
+        const formattedMinutes = timerMinutes < 10 ? `0${timerMinutes}` : timerMinutes;
+        const formattedSeconds = timerSeconds < 10 ? `0${timerSeconds}` : timerSeconds;
+        document.getElementById("timer").textContent = `${formattedMinutes}:${formattedSeconds}`;
+    }, 1000);
+}

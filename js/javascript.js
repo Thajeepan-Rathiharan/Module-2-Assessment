@@ -81,3 +81,15 @@ let score = 0;
 let timerMinutes = 0;
 let timerSeconds = 0;
 let timerInterval;
+
+function startQuiz() {
+    document.getElementById("timer-container").style.display = "block";
+    document.getElementById("question-number").style.display = "block";
+    document.getElementById("start-button").style.display = "none";
+    document.getElementById("how-to-play-button").style.display = "none";
+    document.getElementById("quiz-heading").style.display = "none";
+    document.getElementById("quiz-content").style.display = "none";
+    displayQuestion();
+    startTimer();
+}
+

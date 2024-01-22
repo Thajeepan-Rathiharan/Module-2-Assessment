@@ -38,3 +38,12 @@ body {
     border-bottom: 2px solid wheat;
     box-shadow: 0 0 5px white;
 }
+
+.heading a {
+    text-decoration: none;
+    color: bisque;
+}
+
+.heading a:hover {
+    text-shadow: 3px 3px red;
+}

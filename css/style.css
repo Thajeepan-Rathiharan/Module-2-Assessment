@@ -47,3 +47,8 @@ body {
 .heading a:hover {
     text-shadow: 3px 3px red;
 }
+
+.logo {
+    height: 40px;
+    padding-right: 5px;
+}

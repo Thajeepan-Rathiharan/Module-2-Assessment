@@ -42,21 +42,37 @@
 <!-- The css for this page is in an external stylesheet and is linked to this HTML via the <link> element and identified via the href locating the css file and finding the css stylesheet within the folder and the broswer adds it to this HTML to make the basic HTML have a better structure for the text and images. -->     
 <link rel="stylesheet" href="css/style.css" />
 
+<!-- The </head> tells the browser that the <head> element has come to an end. -->
 </head>
 
+<!-- The <body> element tells the browser what needs to be shown on the page, which in this case will be text and images. -->
 <body>
 
+<!-- Header elements-->  
 <header>
+
+  <!-- <h> is used to tell the broswer that the text within <h> and </h> is headings for the page, there is a class added on to it that till be used in javascript to make the text fade in and out when scrolling down or up the page. -->  
     <h1 class="heading">
+
+<!-- <a> is an anchor element allows the browser to link another page to this page but instead of going to another page, the element from the other page will be linked to this page which in this case is a button element.  -->      
         <a href="index.html" aria-label="Go to the quiz home page">Naruto Shippuden Quiz</a>
     </h1>
+
+<!-- Closing of the <header> tag with the </header> tag. -->    
 </header>   
+
+<!-- <br /> is a line break and does not need a closing tag as it is an opening and closing tag in one tag. -->
 <br />
 
+<!-- The <div> element is used to group content placed within the <div> into one container. 
+     Each <div> tag is given a unique name with either a class or id element to be visually edited using the CSS stylesheet. -->
 <div class="quiz-container">
     <h2 id="quiz-heading">
         Whether you've watched the anime or not take part in this quiz about the show.</h2>
 <br />
+
+<!-- The <p> element tells the broswer that what comes after this is a paragraph and is used to have text shown. 
+     Each <p> tag is given a unique name with an id element just like the <div> tags so that they can be edited using the CSS stylesheet. -->  
     <p id="quiz-content">You'll do well in it, believe it.</p>
     <div id="question-container">
         
@@ -71,20 +87,29 @@
     
       <div id="controls-container">
         
+<!-- The <button> tag does what it says and creates a button with text between the opening and closing <button> tag.
+     It is given a unique name via the id element so it can be edited using CSS. -->        
         <button aria-label="Start the quiz" id="start-button">
           Start Quiz
         </button>
         
         <br>   
 
+<!-- The <button> tag here has JavaScript that tells the browser that when the user clicks on this button that it will open a pop-up using the 'openPopup' function found in the JavaScript stylesheet. -->        
         <button id="how-to-play-button" onclick="openPopup()">How-to-play</button>
 
         <div id="popupContainer" class="popup">
             <div class="popup-content">
+      
+<!-- The <span> tag wraps text without creating a new line to show the text. -->
+<!-- Like the button element this <span> tag has JavaScript added to it telling the browser that when the user clicks the sign (in this case an 'X'), the pop-up will close using the 'closePopup' function found in the JavaScript stylesheet. -->                
               <span class="close" onclick="closePopup()">&times;</span>
               <p>The quiz is simple and plays the same as any other quiz on the internet.
                  If you answer the question correctly the answer you chose will be highlighted in green as seen in the picture below.
               </p>
+  
+<!-- The <img> tag tells the browser that this line of code is to add an image to the page and the browser can find it in a file named 'img' with the name of the image and file format which in this case is a png.
+     The alt name is for the browser to show to the user if their browser does not support png images. -->              
               <img src="img/correct.png" alt="Description of the image">
               <p>However if you choose the wrong answer, the wrong answer will be highlighted in red and the correct answer would be highlighted in green so you know the answer as shown in the picture below.</p>
             
@@ -96,6 +121,8 @@
               <p>I hope you now understand how to play the quiz.</p>
             </div>
           </div>
+
+<!-- The JavaScript in this <button> tag tells the browser that when the user clicks this button to run the 'retryQuiz' function found in the JavaScript stylesheet. -->          
           <button aria-label="Start the quiz again" id="retry-button"onclick="retryQuiz()">Retry Quiz</button>
 
           <div id="timer-container">

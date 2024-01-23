@@ -80,7 +80,9 @@ body {
     border: 2px solid wheat;
     box-shadow: 0 0 10px 2px wheat;
 }
-/** **/
+/** The element(s) with the class name 'quiz-container' have the margin set to auto to automatically center the content, have a max width of 700px (in other words the width is limited to 700px) and width set to 80%, so that the content takes up 80% of the screen.
+    The background colour is set using rgba to select a colour, there is padding around the content of 25px, the border radius is set to 10px, the border has a value of 2px and is in the form of a solid 'wheat' colour.
+    The content also has a 'box-shadow' on it in the colour of 'wheat'. **/
 
 h2 {
     padding-top: 10px;
@@ -88,18 +90,21 @@ h2 {
     color: white;
     font-family: 'Merriweather', sans-serif;
 }
-/** **/
+/** The <h2> tag in the HTML have CSS added to them here, and they have been given 'padding-top' of 10px which adds space around the content and the top of its border by 10px.
+    'text-align:center' makes the text get centered of the container. 
+    The colour is set to white and the primary font is set to 'Merriweather', but if the browser does not support it 'sans-serif' is set to the secondary choice for the font. **/
 
 h2 em {
     font-weight: bold;
 }
-/** **/
+/** The <h2> tag has an emphasis element that has its 'font-weight' set to bold to make it stand out. **/
 
 h2 em:hover {
     text-shadow: 3px 3px red;
     color: bisque;
 }
-/** **/
+/** The <h2> tag has an emphasis element, and with this line above it only affects the <h2> tag when it is hovered over by the user.
+    Text will have shadow around it of 3px and the shadow being red, and the colour being set to 'bisque' when being hovered over. **/
 
 p {
     color: white;
@@ -107,12 +112,12 @@ p {
     margin: 10px 0;
     text-align: center;
 }
-/** **/
+/** The <p> element will have the colour set to white, font-size set to 18px, a margin of 10px to the left and 0px to the right with the text aligned to the center of the container. **/
 
 #question-container {
     margin-bottom: 20px;
 }
-/** **/
+/** The HTML tags with the id name 'question-container' will have 20px space between the bottom border of an element and the other elements on the page. **/
 
 #question-number {
     text-align: center;
@@ -122,7 +127,9 @@ p {
     font-size: 20px;
     font-weight: bold;
 }
-/** **/
+/** The HTML tags with the id name 'question-number' will have the text aligned to the center, 15px of space between the bottom border of an element and the other elements on the page.
+    The colour is set to 'whitesmoke', the font is primarily set to 'Merriweather' but if the browser does not support the font type, it will use the default which is 'sans-serif'.
+    The size of the font is set to 20px and the font is made bold using 'font-weight'. **/
 
 #question-text {
     font-size: 18px;
@@ -132,7 +139,10 @@ p {
     font-family: 'Merriweather', sans-serif;
     color: white;
 }
-/** **/
+/** HTML tags with the id name 'question-text' have the size of the font at 18px, the font has thick strokes as the 'font-weight' is bold.
+    The text is aligned to the center of the container and there is 30px space between the bottom of an element and the other elements on the page.
+    The first choice of font is set to 'Merriweather' but if the browser does not support the font type, the default font 'sans-serif' is used.
+    The colour of the text is set to white. **/
 
 #answer-buttons {
     display: grid;
@@ -140,7 +150,10 @@ p {
     grid-gap: 30px;
     font-family: 'Merriweather', sans-serif;
 }
-/** **/
+/** HTML tags with the id name 'answer-buttons' has the element as a grid container with the display being set to grid.
+    'grid-template-columns' states the size and number of columns on a grid. The 'repeat' value creates a pattern of columns, which in this case is 2 times (first value being 2). The 1fr represents the fraction of the space available to it, which it will take up in this case.
+    There is 30px worth of space between grid items horizontally and vertically using the element 'grid-gap'.
+    The font family is set to 'Merriweather' but if the browser does not support the font, 'sans-serif' is used instead. **/
 
 button {
     height: 40px;

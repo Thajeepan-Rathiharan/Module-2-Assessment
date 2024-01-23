@@ -166,14 +166,18 @@ button {
     border-radius: 5px;
     box-shadow: 0 0 3px white;
 }
-/** **/
+/** The <button> tag has been given CSS properties here of having its height set to 40px.
+    Padding is the space between the elements content and its border, which in this case would be 10px worth of space between the button and its border.
+    The font size is set to 16px, the colour has been set with hex a value.
+    A white border has been added around the <button> tag and has been given a border radius of 5px with a white shadow around the button. **/
 
 button:hover {
     cursor: pointer;
     box-shadow: 2px 2px white;
     transform: scale(1.1);
 }
-/** **/
+/** When the user hovers over the <button> element, the cursor (if the website is being viewed on desktop) turns into a pointer instead of a clicker, which tells the user that the button is clickable.
+    It has a shadow around the box that appears when the button is hovered over and has the button 'transform', in other words increase by 1.1 when being hovered over. **/
 
 #controls-container {
     display: flex;
@@ -181,13 +185,14 @@ button:hover {
     flex-direction: column;
     align-items: center;
 }
-/** **/
+/** The HTML tags that have the id name of 'controls-container' have the 'display' set to flex allowing the content to be adjusted, the content being centered by 'justify-content.
+    The direction of the flex has been set to columns to make a horizontal column, and the items have been centered using 'align-items: center'. **/
 
 #timer-container {
     display: flex;
     align-items: center;
 }
-/** **/
+/** The HTML elements with the unique id name 'timer-container' have the 'display' set to flex to allow the container to be moved around the page, and the items are centered using 'align-items: center'. **/
 
 #timer {
     background-color: #150335;
@@ -199,17 +204,20 @@ button:hover {
     color: white;
     font-family: 'Merriweather', sans-serif;
 }
-/** **/
+/** Elements with the id name 'timer' have their background colour changed, have a solid border around the content with the colour 'wheat' and 2px thickness.
+    There is 10px worth space around the elements border with the 'margin' CSS property, and 10px worth space around the elements content with the 'padding' CSS property.
+    The 'font-weight' is set to bold and the 'font-size' is set to 20px.
+    The font colour has been set to white and the font family has two options, the first option being 'Merriweather' and the second being 'sans-serif. If the browser does not support 'Merriweather, the browser will use 'sans-serif' font instead. **/
 
 .correct-answer {
     color: green
 }
-/** **/
+/** The HTML element that has the unique class name 'correct-answer' allows the element to turn green to show the user they selected the correct answer. **/
 
 .wrong-answer {
     color: red;
 }
-/** **/
+/** The HTML element that has the unique class name 'wrong-answer' allows the element to turn red to show the user they selected the wrong answer. **/
 
 footer {
     background-color: #150335;
@@ -221,7 +229,12 @@ footer {
     height: auto;
     width: 100vw;
 }
-/** **/
+/** The <footer> tag has its background colour set with the 'background-color' CSS property.
+    'margin-top' is set to auto enabling the footer to be horizontally center the element inside of the container.
+    'padding-bottom' is set to 14px to create space around the bottom of the content and its border.
+    'border-top' enables there to be a 2px value worth solid 'wheat' coloured border.
+    The font colour has been set to white and the font family has two options, the first option being 'Merriweather' and the second being 'sans-serif. If the browser does not support 'Merriweather, the browser will use 'sans-serif' font instead. 
+    Colour is et to 'bisque' and the footers 'height' property is set to auto and the width is set to 100 vertical width. **/
 
 .social-networks {
     display: flex;
@@ -231,7 +244,12 @@ footer {
     margin: 0 auto;
     max-width: 300px;
 }
-/** **/
+/** Elements with the 'social-networks' class name have the 'display' set to flex enabling the content to be moved freely.
+    The text is aligned to the center of the container and there is 30px space between the bottom of an element and the other elements on the page.
+    The content being centered by 'justify-content'.
+    'padding' is set to 0 meaning there is no space created around the content and its border.
+    'margin' is set to 0 and auto meaning there is no space and it is centered,
+    The elements 'max-width' is set to 300px.**/
 
 .social-networks>li {
     display: inline;
@@ -239,32 +257,37 @@ footer {
     width: 20%;
     list-style: none;
 }
-/** **/
+/** The elements with the class name 'social networks' and come under the list tag have the element fit itself on the same line via 'display: inline'.
+    'margin-top' is set to 20px creating space at the top of the element/
+    The elements width is set to 20% meaning 20% of its orginal size.
+    'list-style' being set to none means that the properties for a list are not in one declaration. **/
 
 .social-networks i {
     color: bisque;
     font-size: 30px;
 }
-/** **/
+/** The elements with the class name 'social networks' italics colour is set to 'bisque' and the fonts size is set to 30px. **/
 
 .copyright-wrapper {
     font-family: 'Merriweather', sans-serif;
     text-align: center;
     display: inline;
 }
-/** **/
+/** The elements with the class name 'copyright-wrapper' have the font set to 'Merriweather' but if the browser does not support that font, it will use 'sans-serif' instead. 
+    'text-align: center' aligns the content in the center of the container.
+    'display: inline' tells the element to fit itself on the same line. **/
 
 .copyright-wrapper p {
     color: bisque;
     font-size: 17px;
 }
-/** **/
+/** <p> elements with the class name 'copyright-wrapper' have their colour set to 'bisque' and the fonts size is set to 17px. **/
 
 p .copyright {
     margin-right: 5px;
     vertical-align: middle;
 }
-/** **/
+/** <p> elements and elements with the class name 'copyright' have space between the right edge of an element and its surroundings set to 5px, and 'vertical-align: middle' makes the element align itself with the baseline and half of the x-height of its parent element. **/
 
 .popup {
     display: none;
@@ -277,26 +300,37 @@ p .copyright {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     z-index: 1;
 }
-/** **/
+/** Elements with the class name 'popup' have the display set to none.
+    Position is set to fixed meaning it can not be moved around freely or changed unless given a different value.
+    The 'top' property is set to 50% meaning it is vertically positioned 50% to the top.
+    The 'left' property is set to 50% meaning it is horizontally positioned to the left. 
+    The 'transform' property in this case translates the element horizontally and vertically allowing them to be centered alongside with the help of the property 'position: fixed'.
+    There is space around the content and its border of a value of 20px.
+    Background colour is set using hex code colour.
+    There is a box shadow layer added with rgba colour code.
+    'z-index' is set to 1 allowing this element to be positioned above an element with a 'z-index' value of 0 or no 'z-index'. In this case it will be placed on top of other content that do not have the 'z-index' property set to 1. **/
 
 .popup-content {
     text-align: center;
     padding: 20px;
 }
-/** **/
+/** Elements with the class name 'popup-content' have their text aligned to the center of their container with the 'text-align: center' property, and have space around the content and its border of 20px with the 'padding' CSS property. **/
 
 .popup-content p {
     font-size: 12px;
     color: white;
 } 
-/** **/ 
+/** <p> elements with the container that have the class name 'popup-container' have the size of their fonts set to 12px with the 'font-size' property.
+    The texts colour is set to white with the 'color' property. **/ 
 
 .popup-content img {
     max-width: 60%;
     height: auto;
     margin-bottom: 10px;
 }
-/** **/
+/** <img> elements within containers that have the class name 'popup-content' have the images 'max-width' set to 60% of their original size.
+   The 'height' property is set to auto meaning the elements height is adjusted based on the size of its content automatically.
+   'margin-bottom' is set to 10px meaning there is 10px worth space around an elements border on the bottom side of the element. **/
   
 .close {
     position: absolute;
@@ -306,7 +340,12 @@ p .copyright {
     color: white;
     cursor: pointer;
 }
-/** **/
+/** HTML elements with the class name 'close' have an absolute position which means the element is repositioned and pulled out of the page flow and sit in front of the elements that come after it.
+    The 'top' property pushes the element 10px (pixels) away from the top of the elements padding box.
+    The 'right' property pushes the element 15px (pixels) aways from the right of the elements padding box.
+    The fonts are set to a size of 30px with the 'font-size' property.
+    The font colour is set to white with the 'color' property.
+    The cursor is stated to be changed to a pointer when the element is clicked or hovered on by the user. **/
 
 /* Media Query for viewing the quiz website on tablet screens. */  
   @media screen and (min-width: 768px) and (max-width: 1024px) {

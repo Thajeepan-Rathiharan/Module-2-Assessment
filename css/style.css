@@ -7,7 +7,8 @@
     border: none;
     box-sizing: border-box;
 }
-/** The * (asterick) is a universal selector and applies all the settings in the curly braces to all elements on the page. **/
+/** The * (asterick) is a universal selector and applies all the settings in the curly braces to all elements on the page.
+    In this case all elements on the page have a margin and padding of 0, no border and box-sizing is set to 'border-box'. **/
 
 html {
     background-image: linear-gradient(rgba(255, 0, 0, 0.25),
@@ -15,7 +16,8 @@ html {
     background-size: cover;
     background-repeat: no-repeat;
 }
-
+/** The html element in the stylesheet means that whatever is in the curly braces applies to the whole HTML.
+    In this case the background image has a background image, but has a colour on top of the original colour, and the background image is set to cover the web page and set so that to 'no-repeat' so it does not repeat once the image is rendered on the page, even if it does not fit the page. **/
 
 body {
     font-family: 'Merriweather', sans-serif;
@@ -27,6 +29,10 @@ body {
     min-height: 100vh;
     overflow-x: hidden;
 }
+/** The body element is given a font-family of 'Merriweather' and if it is not available with the browser, the default sans serif font is used for the text.
+    Font weight is set to 400, display is set to flex so the content in the body element can be freely moved and it is centered on the page using 'justify-content', and the text are set in columns. 
+    A minimum height of 100vh is set so that the page can be responsiveon more than one device.
+    'overflow-x: hidden' is set to hidden so that content will be hidden if it exceeds over a certain width value. **/
 
 .heading {
     margin: auto;
@@ -40,20 +46,29 @@ body {
     border-bottom: 2px solid wheat;
     box-shadow: 0 0 5px white;
 }
+/** The elements in the curly braces above will only affect the HTML tags that have a class name of 'heading'.
+    The margin is set to auto which means the content is automatically centered.
+    The width is set to 100vw which stands for vertical width.
+    The font here is set to primarily 'Alegreya SC' but if the browser does not support the font type, it will use the defauly 'sans-serif' font. 
+    Font size is set to 50px. font weight is set to 500 and text is aligned to the center with the colour being set to 'bisque'.
+    The background colour is set as well as a colour for the border and box shadow around the box created. **/
 
 .heading a {
     text-decoration: none;
     color: bisque;
 }
+/** Here the tags with the unique class name of 'heading' anchor elements will have no 'text-decoration' added to them as 'none' is selected for it, and the colour is set to 'bisque'. **/
 
 .heading a:hover {
     text-shadow: 3px 3px red;
 }
+/** Here the tags with the unique class name of 'heading' anchor elements have a text shadow effect added to them when the user hovers over the element, giving it 3px worth of red around it. **/
 
 .logo {
     height: 40px;
     padding-right: 5px;
 }
+/** The element(s) with the unique class name 'logo' have the height set to 40px and padding-right set to 5px, meaning that there is 5px space set between the content and its right border. **/
 
 .quiz-container {
     margin: auto;
@@ -65,6 +80,7 @@ body {
     border: 2px solid wheat;
     box-shadow: 0 0 10px 2px wheat;
 }
+/** **/
 
 h2 {
     padding-top: 10px;
@@ -72,15 +88,18 @@ h2 {
     color: white;
     font-family: 'Merriweather', sans-serif;
 }
+/** **/
 
 h2 em {
     font-weight: bold;
 }
+/** **/
 
 h2 em:hover {
     text-shadow: 3px 3px red;
     color: bisque;
 }
+/** **/
 
 p {
     color: white;
@@ -88,10 +107,12 @@ p {
     margin: 10px 0;
     text-align: center;
 }
+/** **/
 
 #question-container {
     margin-bottom: 20px;
 }
+/** **/
 
 #question-number {
     text-align: center;
@@ -101,6 +122,7 @@ p {
     font-size: 20px;
     font-weight: bold;
 }
+/** **/
 
 #question-text {
     font-size: 18px;
@@ -110,6 +132,7 @@ p {
     font-family: 'Merriweather', sans-serif;
     color: white;
 }
+/** **/
 
 #answer-buttons {
     display: grid;
@@ -117,6 +140,7 @@ p {
     grid-gap: 30px;
     font-family: 'Merriweather', sans-serif;
 }
+/** **/
 
 button {
     height: 40px;
@@ -129,12 +153,14 @@ button {
     border-radius: 5px;
     box-shadow: 0 0 3px white;
 }
+/** **/
 
 button:hover {
     cursor: pointer;
     box-shadow: 2px 2px white;
     transform: scale(1.1);
 }
+/** **/
 
 #controls-container {
     display: flex;
@@ -142,11 +168,13 @@ button:hover {
     flex-direction: column;
     align-items: center;
 }
+/** **/
 
 #timer-container {
     display: flex;
     align-items: center;
 }
+/** **/
 
 #timer {
     background-color: #150335;
@@ -158,14 +186,17 @@ button:hover {
     color: white;
     font-family: 'Merriweather', sans-serif;
 }
+/** **/
 
 .correct-answer {
     color: green
 }
+/** **/
 
 .wrong-answer {
     color: red;
 }
+/** **/
 
 footer {
     background-color: #150335;
@@ -177,6 +208,7 @@ footer {
     height: auto;
     width: 100vw;
 }
+/** **/
 
 .social-networks {
     display: flex;
@@ -186,6 +218,7 @@ footer {
     margin: 0 auto;
     max-width: 300px;
 }
+/** **/
 
 .social-networks>li {
     display: inline;
@@ -193,27 +226,32 @@ footer {
     width: 20%;
     list-style: none;
 }
+/** **/
 
 .social-networks i {
     color: bisque;
     font-size: 30px;
 }
+/** **/
 
 .copyright-wrapper {
     font-family: 'Merriweather', sans-serif;
     text-align: center;
     display: inline;
 }
+/** **/
 
 .copyright-wrapper p {
     color: bisque;
     font-size: 17px;
 }
+/** **/
 
 p .copyright {
     margin-right: 5px;
     vertical-align: middle;
 }
+/** **/
 
 .popup {
     display: none;
@@ -225,32 +263,37 @@ p .copyright {
     background-color: #150335;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     z-index: 1;
-  }
+}
+/** **/
 
 .popup-content {
     text-align: center;
     padding: 20px;
-  }
+}
+/** **/
 
-  .popup-content p {
+.popup-content p {
     font-size: 12px;
     color: white;
-}  
+} 
+/** **/ 
 
 .popup-content img {
     max-width: 60%;
     height: auto;
     margin-bottom: 10px;
-  }
+}
+/** **/
   
-  .close {
+.close {
     position: absolute;
     top: 10px;
     right: 15px;
     font-size: 30px;
     color: white;
     cursor: pointer;
-  }
+}
+/** **/
 
 /* Media Query for viewing the quiz website on tablet screens. */  
   @media screen and (min-width: 768px) and (max-width: 1024px) {

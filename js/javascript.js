@@ -103,12 +103,15 @@ function startQuiz() {
 // When 'function startQuiz() is called, it hides the start button and other content on the main quiz page and displays first question.
 // After the other content disappear, the question and timer starts to be displayed once the quiz starts. 
 
+// The function below access' the HTML element with the id 'popupContainer' and makes the popup appear on the page.
 function openPopup() {
+// The function changes the 'display' style property to 'block' which will make the popup container visible to the user(s).    
     document.getElementById('popupContainer').style.display = 'block';
 }
 
-  
+// The function below access' the HTML element with the id 'popupContainer' and makes the popup disappear from the page.
 function closePopup() {
+// The function changes the 'display' style property to 'none' which will make the popup container invisible to the user(s).
     document.getElementById('popupContainer').style.display = 'none';
 }
 

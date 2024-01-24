@@ -347,29 +347,42 @@ p .copyright {
     The font colour is set to white with the 'color' property.
     The cursor is stated to be changed to a pointer when the element is clicked or hovered on by the user. **/
 
-/* Media Query for viewing the quiz website on tablet screens. */  
-  @media screen and (min-width: 768px) and (max-width: 1024px) {
-    body {
-        font-size: 16px;
-    }
+/** Media Query for viewing the quiz website on tablet screens. **/  
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+/* @media screen is used to change the content on the screen of a web page depending on the device width. An example is with this website the content will be bigger on desktop, but smaller on a mobile phone or tablet.
+   So that they don't look completely different, @media screen enables the users to be able to have the right sizes and shapes showing via having different values for the element, so when it goes from a desktop view to mobile view the only thing changing will be the screen size and not the content.
+   768px (pixels) is chosen as the minimum width for the device because the smallest tablet screen size in terms of width from the devices on the Google Inspect tool is 768px (pixels). **/   
 
-    .quiz-container {
+   body {
+        font-size: 16px;
+}
+/** The content within the body element have been given a font size of 16px as the screen is smaller than a desktop screen. **/
+
+.quiz-container {
         max-width: 90%;
         margin: auto;
-    }
+}
+/** The elements with the class name 'quiz-container' has its width increased to 90% so it fits the size of the device (in this case the tablet) and 'margin' is set to auto so it gets centered horizontally to its parent element. **/
 
-    button:hover {
+button:hover {
         cursor: pointer;
         box-shadow: 2px 2px white;
         transform: scale(1);
-    }
+}
+/** When the elements with the class name 'button' are hovered over, there is a shadow in the outline of a box around it with a white line.
+    The cursor changes to a pointer to let the user(s) know the button is clickable.
+    The 'transform' property enables the button to increase by 1 when being hovered over.**/
 
-    #answer-buttons {
+#answer-buttons {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 20px;
-    }
-     /* Style for the pop-up container */
+}
+/** HTML tags with the id name 'answer-buttons' has the element as a grid container with the display being set to grid.
+    'grid-template-columns' states the size and number of columns on a grid. The 'repeat' value creates a pattern of columns, which in this case is 1 time (first value being 1). The 1fr represents the fraction of the space available to it, which it will take up in this case.
+    There is 20px worth of space between grid items horizontally and vertically using the element 'grid-gap'. **/
+
+/** Style for the pop-up container **/
 .popup {
     display: none;
     position: fixed;
@@ -381,35 +394,57 @@ p .copyright {
     background-color: #150335;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     z-index: 1;
-  }
+}
+/** Elements with the class name 'popup' have the display set to none.
+    Position is set to fixed meaning it can not be moved around freely or changed unless given a different value.
+    The 'top' property is set to 50% meaning it is vertically positioned 50% to the top.
+    The 'left' property is set to 100% meaning it is horizontally positioned to the left. 
+    The 'transform' property in this case translates the element horizontally and vertically allowing them to be centered alongside with the help of the property 'position: fixed'.
+    There is space around the content and its border of a value of 20px.
+    Background colour is set using hex code colour.
+    There is a box shadow layer added with rgba colour code.
+    'z-index' is set to 1 allowing this element to be positioned above an element with a 'z-index' value of 0 or no 'z-index'. In this case it will be placed on top of other content that do not have the 'z-index' property set to 1. **/
+
 
   /* Style for the pop-up content */
 .popup-content {
     text-align: center;
     padding: 20px;
-  }
+}
+/** Elements with the class name 'popup-content' have their text aligned to the center of their container with the 'text-align: center' property, and have space around the content and its border of 20px with the 'padding' CSS property. **/
 
 /* Style for the text inside the pop-up */
   .popup-content p {
     font-size: 10px;
     color: white;
 }  
+/** <p> elements with the container that have the class name 'popup-container' have the size of their fonts set to 10px with the 'font-size' property.
+    The texts colour is set to white with the 'color' property. **/ 
 
-  /* Style for the image inside the pop-up */
+/* Style for the image inside the pop-up */
 .popup-content img {
     max-width: 60%;
     height: auto;
     margin-bottom: 10px;
-  }
+}
+/** <img> elements within containers that have the class name 'popup-content' have the images 'max-width' set to 60% of their original size.
+   The 'height' property is set to auto meaning the elements height is adjusted based on the size of its content automatically.
+   'margin-bottom' is set to 10px meaning there is 10px worth space around an elements border on the bottom side of the element. **/
   
-  /* Style for the close button */
-  .close {
+/* Style for the close button */
+.close {
     position: absolute;
     top: 10px;
     right: 15px;
     font-size: 30px;
     cursor: pointer;
-  }
+}
+/** HTML elements with the class name 'close' have an absolute position which means the element is repositioned and pulled out of the page flow and sit in front of the elements that come after it.
+    The 'top' property pushes the element 10px (pixels) away from the top of the elements padding box.
+    The 'right' property pushes the element 15px (pixels) aways from the right of the elements padding box.
+    The fonts are set to a size of 30px with the 'font-size' property.
+    The size of the font is 30px via the 'font-size' property.
+    The cursor is stated to be changed to a pointer when the element is clicked or hovered on by the user. **/
 }  
 
 /* Media Query for viewing the quiz website on mobile phones with a smaller screen than a tablet. */

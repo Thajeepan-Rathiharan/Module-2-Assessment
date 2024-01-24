@@ -339,13 +339,14 @@ p .copyright {
     font-size: 30px;
     color: white;
     cursor: pointer;
-}
 /** HTML elements with the class name 'close' have an absolute position which means the element is repositioned and pulled out of the page flow and sit in front of the elements that come after it.
     The 'top' property pushes the element 10px (pixels) away from the top of the elements padding box.
     The 'right' property pushes the element 15px (pixels) aways from the right of the elements padding box.
     The fonts are set to a size of 30px with the 'font-size' property.
     The font colour is set to white with the 'color' property.
     The cursor is stated to be changed to a pointer when the element is clicked or hovered on by the user. **/
+}
+
 
 /** Media Query for viewing the quiz website on tablet screens. **/  
 @media screen and (min-width: 768px) and (max-width: 1024px) {

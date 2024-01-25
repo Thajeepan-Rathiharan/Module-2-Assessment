@@ -63,4 +63,4 @@ The website was deployed to Github in the following method:
 
 I got the questions and buttons layouts from the following [YouTube video](https://www.youtube.com/watch?v=WiLTsxjCmWQ&t=591s). 
 
-The website's background image is from the game cover of 'Naruto Shippuden Ultimate Ninja Storm 4' without the text.
+The website's background image is from the game cover of ['Naruto Shippuden Ultimate Ninja Storm 4'](https://www.deviantart.com/maxiuchiha22/art/Naruto-Shippuden-Ult-Ninja-Storm-4-Wallpaper-1-798917740) without the text.

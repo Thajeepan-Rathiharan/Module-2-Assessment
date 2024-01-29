@@ -28,6 +28,7 @@ This can be seen with the @media screen resolutions stated on the css stylesheet
 * Github is used to host live sites.
 * FontAwesome is for website icons in the footer of the site.
 * Favicon.io is used to create the website favicon. 
+* EzGif was used to crop the website favicon from its original size to reduced sizes.
 
 ## Testing of the site
 
@@ -88,6 +89,10 @@ Font used for the quiz website was [Merriweather font](https://fonts.google.com/
 ### Template for the quiz
 
 I got the questions and buttons layouts from the following [YouTube video](https://www.youtube.com/watch?v=WiLTsxjCmWQ&t=591s). 
+
+### Browser tab icon
+
+The browser tab icon is the [Naurot Shippuden symbol](https://www.vecteezy.com/vector-art/26620795-konoha-symbol-hidden-leaf-naruto) found on a vector site following a Google search.
 
 ### Background image
 

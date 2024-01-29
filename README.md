@@ -46,6 +46,14 @@ Finally the website was tested through the [JavaScript Validation Service](https
 
 ![JavaScript validation](img/README_img/js_val.png)
 
+![Google Lighthouse](img/README_img/google_lighthouse.png)
+
+Page loading times and performance of the quiz website was checked through the open source tool called 'Google Lighthouse'. 
+
+![]()
+
+This tool is found by pressing Ctrl, Shift and I on the keyboard and pressing the '>>' sign and on the dropdown selecting 'Lighthouse'.
+
 ## Deployment
 
 The website was deployed to Github in the following method:
@@ -60,6 +68,8 @@ The website was deployed to Github in the following method:
 8. Then waited until I saw a link for the deployed page within GitHub Page section. This can take a while. Once the page updates I got this message: Your site is live at https://thajeepan-rathiharan.github.io/Module-2-Assessment/.
 
 ## Credits
+
+Font used for the quiz website was [Merriweather font](https://fonts.google.com/specimen/Merriweather?query=Merr) from Google fonts.
 
 I got the questions and buttons layouts from the following [YouTube video](https://www.youtube.com/watch?v=WiLTsxjCmWQ&t=591s). 
 

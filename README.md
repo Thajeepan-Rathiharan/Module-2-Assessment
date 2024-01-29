@@ -2,12 +2,14 @@
 
 This quiz website is made for the project assessment for module 2 of the Front End Developer course, and it is to showcase on the knowledge I have gained from the lessons in the module about using JavaScript to enhance the websites I can make alongside HTML and CSS. On the other hand, this quiz is for anyone to participate in and test their knowledge about the anime Naruto Shippuden and if they aren't a fan they might even be intrigued with the show and want to watch it. 
 
+### [Website link](https://thajeepan-rathiharan.github.io/Module-2-Assessment/)
+
 ## Usability
 
-The site is responsive on both desktop and mobile devices.   
-This can be seen with the @media screen resolutions stated on the css stylesheet that tell the browser the settings for each element depending on what the devices screen size is. So if the screen size is around 1025px or more, the content would be big and fit the screen. On the other hand if the screen size is around 600px or less, the content would be smaller on small screens but still be visible and readable due to the values given to the elements with the CSS properties given to those elements in the CSS stylesheet.
-
 The quiz is easy to use as it starts once the user selects the 'start quiz' button and answers the questions, which there are 15 questions in total. Also at the end of the quiz it gives the user their result in a percentage format as well as telling them how many questions they got correct out of 15. Then there is a 'retry quiz' button that the user(s) can select if they want to try and get a better score which takes them to the home page of the quiz. If the user does not know how the quiz works, they can select the 'how-to-play' button and a popup appears that has a simple explanation of how the user would know how they know they got a question correct or wrong and how they can retry the quiz.
+
+The site is responsive on both desktop, tablet and mobile devices. This means users can play the quiz on whatever platform thet desire, whether it is on their desktop, tablet or mobile phones.   
+This can be seen with the @media screen resolutions stated on the css stylesheet that tell the browser the settings for each element depending on what the devices screen size is. So if the screen size is around 1025px or more, the content would be big and fit the screen. On the other hand if the screen size is around 600px or less, the content would be smaller on small screens but still be visible and readable due to the values given to the elements with the CSS properties given to those elements in the CSS stylesheet.
 
 ## Features of the site
 

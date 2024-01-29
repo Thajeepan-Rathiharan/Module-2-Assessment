@@ -56,15 +56,15 @@ Finally the website was tested through the [JavaScript Validation Service](https
 
 ### Performance check
 
-![Google Lighthouse](img/README_img/google_lighthouse.png)
-
 Page loading times and performance of the quiz website was checked through the open source tool called 'Google Lighthouse'. 
+
+![Google Lighthouse](img/README_img/google_lighthouse.png)
 
 ### Finding the Google Lighthouse tool
 
-![Finding the Google Lighthouse tool](img/README_img/selecting_lighthouse_tool.png)
-
 The 'Google Lighthouse' tool is found by pressing Ctrl, Shift and I on the keyboard and pressing the '>>' sign and on the dropdown selecting 'Lighthouse'.
+
+![Finding the Google Lighthouse tool](img/README_img/selecting_lighthouse_tool.png)
 
 ## Deployment
 

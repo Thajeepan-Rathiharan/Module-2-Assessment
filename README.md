@@ -34,25 +34,33 @@ I tested my website using online tools such as:
 * [CSS WC3 Markup Validation Service](https://jigsaw.w3.org/css-validator/)
 * [JavaScript Validation Servce](https://jshint.com/)
 
+### HTML WC3 Markup Validation Service
+
 First the website was put through the [HTML WC3 Markup Validation Service](https://validator.w3.org/#validate_by_input) and it came back with no errors on the html validator.
 
 ![HTML validation](img/README_img/html_val.png)
+
+### CSS WC3 Markup Validation Service
 
 Then the website was also put through the [CSS WC3 Markup Validation Service](https://jigsaw.w3.org/css-validator/) and it came back with no errors on the css validator.
 
 ![CSS validation](img/README_img/css_val.png)
 
+### JavaScript Validation Service
+
 Finally the website was tested through the [JavaScript Validation Service](https://validator.w3.org/#validate_by_input) and it came back with no errors on the jshint validator.
 
 ![JavaScript validation](img/README_img/js_val.png)
+
+### Performance check
 
 ![Google Lighthouse](img/README_img/google_lighthouse.png)
 
 Page loading times and performance of the quiz website was checked through the open source tool called 'Google Lighthouse'. 
 
-![]()
+![Finding the Google Lighthouse tool](img/README_img/selecting_lighthouse_tool.png)
 
-This tool is found by pressing Ctrl, Shift and I on the keyboard and pressing the '>>' sign and on the dropdown selecting 'Lighthouse'.
+The 'Google Lighthouse' tool is found by pressing Ctrl, Shift and I on the keyboard and pressing the '>>' sign and on the dropdown selecting 'Lighthouse'.
 
 ## Deployment
 

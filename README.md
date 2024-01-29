@@ -58,6 +58,8 @@ Finally the website was tested through the [JavaScript Validation Service](https
 
 Page loading times and performance of the quiz website was checked through the open source tool called 'Google Lighthouse'. 
 
+### Finding the Google Lighthouse tool
+
 ![Finding the Google Lighthouse tool](img/README_img/selecting_lighthouse_tool.png)
 
 The 'Google Lighthouse' tool is found by pressing Ctrl, Shift and I on the keyboard and pressing the '>>' sign and on the dropdown selecting 'Lighthouse'.
@@ -77,8 +79,14 @@ The website was deployed to Github in the following method:
 
 ## Credits
 
+### Font
+
 Font used for the quiz website was [Merriweather font](https://fonts.google.com/specimen/Merriweather?query=Merr) from Google fonts.
 
+### Template for the quiz
+
 I got the questions and buttons layouts from the following [YouTube video](https://www.youtube.com/watch?v=WiLTsxjCmWQ&t=591s). 
+
+### Background image
 
 The website's background image is from the game cover of ['Naruto Shippuden Ultimate Ninja Storm 4'](https://www.deviantart.com/maxiuchiha22/art/Naruto-Shippuden-Ult-Ninja-Storm-4-Wallpaper-1-798917740) without the text.
